@@ -390,6 +390,111 @@ DATABASE_URL=mysql+pymysql://user:password@localhost/support_bot
 
 ---
 
+## 🤖 AI Prompts & Response Generation
+
+### System Prompts Used
+
+#### 1. **Relevance Detection Prompt** (Check if question is product-related)
+
+```
+Analyze if this customer question is related to product/service support and FAQs.
+
+Customer Question: {query}
+
+Previous Conversation: {conversation_context}
+
+Respond in this exact JSON format:
+{"is_related": true/false, "category": "category_name", "confidence": 0.0-1.0, "reason": "brief reason"}
+
+Guidelines:
+- is_related: true if question is about product features, account, billing, passwords, features, technical support
+- is_related: false if question is about unrelated topics (politics, personal advice, jokes, etc.)
+- category: probable FAQ category if related, empty string if not
+- confidence: how confident you are (0.5-1.0)
+```
+
+#### 2. **Response Generation Prompt** (Generate AI answer for product-related questions)
+
+```
+You are a helpful customer support assistant. Answer this customer question accurately and professionally 
+based on your knowledge about common product/service support topics.
+
+Customer Question: {message}
+
+Previous Context: {conversation_history}
+
+Provide a helpful, clear, and concise answer. If you're not completely sure about something, 
+acknowledge it and suggest they contact the support team for clarification.
+```
+
+### Prompt Optimization
+
+To improve response quality, you can modify these prompts in `backend/app/routes/chat.py`:
+
+**For better relevance detection:**
+```python
+# Adjust the relevance_prompt variable (around line 125)
+relevance_prompt = f"""Your customized prompt here..."""
+```
+
+**For better AI-generated responses:**
+```python
+# Adjust the gpt_prompt variable (around line 245)
+gpt_prompt = f"""Your customized prompt here..."""
+```
+
+### Customization Tips
+
+#### 1. Add Company Context
+```
+You are a support agent for [Company Name]. You represent [Company Name]'s values of [value1, value2].
+```
+
+#### 2. Add Tone/Style Guidelines
+```
+Maintain a friendly, professional tone. Use simple language. Avoid technical jargon.
+Use emojis sparingly. Keep responses under 3 sentences.
+```
+
+#### 3. Add Escalation Rules
+```
+If the customer mentions: billing issues, urgent problems, or complaints → escalate to human support.
+If confidence is below 60% → suggest escalation.
+```
+
+#### 4. Add Response Format
+```
+Structure your response as:
+1. Direct answer to their question
+2. Helpful tip or additional info
+3. Offer next steps
+
+Example:
+Q: How do I reset my password?
+A: [Direct answer]
+💡 Pro tip: [Tip]
+👉 Next: [Next steps]
+```
+
+### Prompt Best Practices
+
+✅ **Do:**
+- Be explicit and clear about requirements
+- Include examples of desired output
+- Specify tone and style preferences
+- Add context about your business
+- Test different variations
+- Monitor response quality
+
+❌ **Don't:**
+- Use vague instructions
+- Overload with unnecessary context
+- Use conflicting guidelines
+- Change prompts frequently without testing
+- Forget to include edge cases
+
+---
+
 ## 📊 Response Types
 
 | Type | Trigger | Behavior |
