@@ -1,0 +1,94 @@
+## Sample FAQ Database
+
+### Account Management
+
+Q: How do I create an account?
+A: To create an account, visit our website and click "Sign Up". Fill in your email, password, and personal information, then click "Create Account". You'll receive a verification email to confirm your account.
+
+Q: How do I reset my password?
+A: If you've forgotten your password, click "Forgot Password" on the login page. Enter your email address and we'll send you a password reset link. Click the link and follow the instructions to create a new password.
+
+Q: Can I change my email address?
+A: Yes, you can change your email in your account settings. Go to Settings > Account > Change Email. Enter your new email and verify it. We'll send a confirmation to both your old and new email addresses.
+
+Q: How do I delete my account?
+A: To delete your account, go to Settings > Account > Delete Account. You'll be asked to confirm this action. Please note that deleting your account is permanent and cannot be undone.
+
+### Billing & Payments
+
+Q: What payment methods do you accept?
+A: We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. All payments are processed securely through encrypted connections.
+
+Q: How often will I be charged?
+A: Billing frequency depends on your plan: Monthly plans are billed every month, yearly plans are billed once per year. You'll receive an invoice via email before each charge.
+
+Q: What is your refund policy?
+A: We offer a 30-day money-back guarantee for all new customers. If you're not satisfied with our service, contact our support team within 30 days of purchase for a full refund. No questions asked.
+
+Q: Can I upgrade or downgrade my plan?
+A: Yes, you can change your plan anytime from your account settings. Upgrades take effect immediately. For downgrades, changes apply at your next billing date.
+
+Q: Do you offer annual discounts?
+A: Yes! Annual plans include a 20% discount compared to monthly billing. You can switch to an annual plan from your account settings.
+
+### Technical Support
+
+Q: What are the system requirements?
+A: Our service works on any device with a modern web browser. Minimum requirements: Chrome 60+, Firefox 55+, Safari 11+, or Edge 79+. Mobile browsers are fully supported.
+
+Q: How do I contact customer support?
+A: You can reach our support team 24/7 through: Live chat on our website, Email: support@company.com, Phone: 1-800-XXX-XXXX. Average response time is under 2 hours.
+
+Q: Is there an API available?
+A: Yes, we provide a comprehensive REST API for developers. Documentation is available at api.company.com/docs. You'll need to generate API keys from your account settings.
+
+Q: How often do you have downtime?
+A: We guarantee 99.9% uptime with scheduled maintenance windows once monthly, usually on Sundays at 2-3 AM UTC. We notify all users in advance of scheduled maintenance.
+
+### Data & Security
+
+Q: Is my data secure?
+A: Yes, we use industry-standard 256-bit SSL encryption for all data in transit. Data at rest is encrypted using AES-256. We undergo regular security audits and comply with GDPR, CCPA, and SOC 2 requirements.
+
+Q: Where is my data stored?
+A: All user data is stored in secure, redundant data centers in the United States. We maintain regular backups on geographically distributed servers to ensure data availability and disaster recovery.
+
+Q: Can I export my data?
+A: Yes, you can export all your data in CSV or JSON format from Settings > Data Export. Your data will be ready to download within 24 hours. Exports include all your content, settings, and transaction history.
+
+Q: Do you share my data with third parties?
+A: No, we never sell or share your personal data with third parties. We only share data when required by law or with your explicit consent. See our Privacy Policy for full details.
+
+### Features & Functionality
+
+Q: What features are included in the free plan?
+A: The free plan includes 10 projects, basic analytics, 1GB storage, and community support. Premium features like advanced analytics, custom domains, and priority support require a paid plan.
+
+Q: Can I integrate with other tools?
+A: Yes, we offer integrations with 50+ popular tools including Slack, Discord, Google Workspace, Microsoft Teams, and many others. Connect integrations from Settings > Integrations.
+
+Q: Is there a mobile app?
+A: We offer native mobile apps for iOS and Android available on the App Store and Google Play. The mobile app has feature parity with our web platform and works offline for most features.
+
+Q: Can I customize the interface?
+A: Yes, with our premium plans you can customize colors, logos, and domain names. You can also adjust layout preferences from Settings > Preferences.
+
+Q: What is your data retention policy?
+A: Free accounts: 30 days of inactive data deletion. Paid accounts: No automatic deletion. You can request manual deletion anytime. Deleted data is purged within 90 days.
+
+### Troubleshooting Common Issues
+
+Q: I can't log in to my account
+A: If you can't log in, first try clicking "Forgot Password" to reset your password. If that doesn't work, try: clearing your browser cache, disabling browser extensions, using a different browser. If you still can't access your account, contact support@company.com with your account email.
+
+Q: My uploads are failing
+A: Upload failures are usually due to file size limits (max 100MB) or unsupported file types. Make sure your file is in a supported format (PDF, DOCX, XLSX, CSV, JPG, PNG). Check your internet connection and try again.
+
+Q: The page is loading slowly
+A: Slow loading can be caused by: poor internet connection, browser cache issues, or high server load. Try: refreshing the page, clearing browser cache, disabling browser extensions. If problems persist, contact support.
+
+Q: I'm getting an error message
+A: Error messages help us diagnose issues. Note the exact error code and message, then: refresh the page, try a different browser, clear cache and cookies. If the error persists, contact support with the error details.
+
+Q: Features aren't working as expected
+A: If a feature isn't working: refresh the page, log out and back in, try a different browser, clear cache. Check our status page for any ongoing incidents. If still having issues, contact support with details about what you're trying to do.
